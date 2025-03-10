@@ -1,0 +1,69 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Page Header */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Styled Table */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Table Headers */
+th {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Table Data */
+td {
+    padding: 12px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Hover Effect */
+tr:hover td {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #ff4757;
+}

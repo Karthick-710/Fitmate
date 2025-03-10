@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Database</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Food Database</h1>
+    </header>
+    <main>
+        <ul>
+            {% for food in foods %}
+            <li>{{ food.name }}: {{ food.calories }} calories</li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>

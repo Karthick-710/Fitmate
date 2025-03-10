@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker - Results</h1>
+    </header>
+    <main>
+        <div class="result-container">
+            <h2>Nutrition & Workout Summary</h2>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Calories Consumed</td>
+                    <td>{{ calorie_intake }} kcal</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>{{ protein }} g</td>
+                </tr>
+                <tr>
+                    <td>Carbs</td>
+                    <td>{{ carbs }} g</td>
+                </tr>
+                <tr>
+                    <td>Fats</td>
+                    <td>{{ fats }} g</td>
+                </tr>
+                <tr>
+                    <td>Calories Burned</td>
+                    <td>{{ calorie_burn }} kcal</td>
+                </tr>
+            </table>
+            <a href="/" class="btn">Back to Home</a>
+        </div>
+    </main>
+</body>
+</html>

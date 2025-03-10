@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ user_name }}'s History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/his.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ user_name }}'s Fitness History</h1>
+
+    <table border="1">
+    <tr>
+        <th>Date</th>
+        <th>Weight (kg)</th>
+        <th>Height (cm)</th>
+        <th>BMI</th>
+        <th>Calories Consumed</th>
+        <th>Protein (g)</th>
+        <th>Carbs (g)</th>
+        <th>Calories Burned</th> <!-- ✅ Added this -->
+    </tr>
+    {% for entry in history_data %}
+    <tr>
+        <td>{{ entry[8] }}</td> <!-- Date -->
+        <td>{{ entry[2] }}</td> <!-- Weight -->
+        <td>{{ entry[3] }}</td> <!-- Height -->
+        <td>{{ entry[4] }}</td> <!-- BMI -->
+        <td>{{ entry[5] }}</td> <!-- Calories Consumed -->
+        <td>{{ entry[6] }}</td> <!-- Protein -->
+        <td>{{ entry[7] }}</td> <!-- Carbs -->
+        <td>{{ entry[8] }}</td> <!-- Calories Burned ✅ FIXED -->
+    </tr>
+    {% endfor %}
+</table>
+
+
+        <a href="/" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
